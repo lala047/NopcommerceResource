@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite">
+
+<listeners>
+		<listener class-name="com.utilities.ExtentReportUtility" />
+	</listeners>
+
+
+	<test name="NOPCommerceResource Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+		  <!--  <class name="com.Testcases.TC_003_SearchCustomerByEmail" />-->
+		 	 <!-- <class name="com.Testcases.TC_001_LoginTest" />-->
+			<!--   <class name="com.Testcases.TC_004_SearchCustomerByName" />-->
+			 <!-- <class name="com.Testcases.TC_002_AddNewCustomerTest" />-->
+			  <class name="com.Testcases.TC_005_DDT" />
+
+		</classes>
+
+	</test>
+
+</suite>
