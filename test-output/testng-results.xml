@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-20T20:58:21 GMT" name="Suite" finished-at="2022-12-20T20:58:36 GMT" duration-ms="15500">
+  <suite started-at="2022-12-21T04:14:48 GMT" name="nopCommerce Functional Suite" finished-at="2022-12-21T04:15:14 GMT" duration-ms="25860">
     <groups>
+      <group name="regression">
+        <method signature="TC_001_LoginTest.loginTest()[pri:0, instance:com.Testcases.TC_001_LoginTest@662ac478]" name="loginTest" class="com.Testcases.TC_001_LoginTest"/>
+        <method signature="TC_002_AddNewCustomerTest.AddnewCustomer()[pri:0, instance:com.Testcases.TC_002_AddNewCustomerTest@3eb25e1a]" name="AddnewCustomer" class="com.Testcases.TC_002_AddNewCustomerTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC_001_LoginTest.loginTest()[pri:0, instance:com.Testcases.TC_001_LoginTest@662ac478]" name="loginTest" class="com.Testcases.TC_001_LoginTest"/>
+        <method signature="TC_002_AddNewCustomerTest.AddnewCustomer()[pri:0, instance:com.Testcases.TC_002_AddNewCustomerTest@3eb25e1a]" name="AddnewCustomer" class="com.Testcases.TC_002_AddNewCustomerTest"/>
+      </group> <!-- sanity -->
+      <group name="master">
+        <method signature="TC_001_LoginTest.loginTest()[pri:0, instance:com.Testcases.TC_001_LoginTest@662ac478]" name="loginTest" class="com.Testcases.TC_001_LoginTest"/>
+        <method signature="TC_002_AddNewCustomerTest.AddnewCustomer()[pri:0, instance:com.Testcases.TC_002_AddNewCustomerTest@3eb25e1a]" name="AddnewCustomer" class="com.Testcases.TC_002_AddNewCustomerTest"/>
+      </group> <!-- master -->
     </groups>
-    <test started-at="2022-12-20T20:58:21 GMT" name="NOPCommerceResource Test" finished-at="2022-12-20T20:58:36 GMT" duration-ms="15500">
-      <class name="com.Testcases.TC_005_DDT">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Testcases.TC_005_DDT@5542c4ed]" started-at="2022-12-20T20:58:21 GMT" name="setup" finished-at="2022-12-20T20:58:26 GMT" duration-ms="5411" status="PASS">
+    <test started-at="2022-12-21T04:14:48 GMT" name="NOPCommerceResource" finished-at="2022-12-21T04:15:14 GMT" duration-ms="25860">
+      <class name="com.Testcases.TC_001_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Testcases.TC_001_LoginTest@662ac478]" started-at="2022-12-21T04:14:49 GMT" name="setup" finished-at="2022-12-21T04:14:53 GMT" duration-ms="4453" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,95 +30,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTestDDt(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Testcases.TC_005_DDT@5542c4ed]" started-at="2022-12-20T20:58:28 GMT" name="loginTestDDt" data-provider="LoginData" finished-at="2022-12-20T20:58:34 GMT" duration-ms="6246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@yourstore.com ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Pass]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginTest()[pri:0, instance:com.Testcases.TC_001_LoginTest@662ac478]" started-at="2022-12-21T04:14:53 GMT" name="loginTest" finished-at="2022-12-21T04:14:56 GMT" duration-ms="3105" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTestDDt -->
-        <test-method signature="loginTestDDt(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Testcases.TC_005_DDT@5542c4ed]" started-at="2022-12-20T20:58:34 GMT" name="loginTestDDt" data-provider="LoginData" finished-at="2022-12-20T20:58:34 GMT" duration-ms="540" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@yourstore.com ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adm]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Fail]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestDDt -->
-        <test-method signature="loginTestDDt(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Testcases.TC_005_DDT@5542c4ed]" started-at="2022-12-20T20:58:34 GMT" name="loginTestDDt" data-provider="LoginData" finished-at="2022-12-20T20:58:35 GMT" duration-ms="530" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adm@yourstore.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Fail]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestDDt -->
-        <test-method signature="loginTestDDt(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Testcases.TC_005_DDT@5542c4ed]" started-at="2022-12-20T20:58:35 GMT" name="loginTestDDt" data-provider="LoginData" finished-at="2022-12-20T20:58:35 GMT" duration-ms="471" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adm@yourstore.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adm]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Fail]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestDDt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Testcases.TC_005_DDT@5542c4ed]" started-at="2022-12-20T20:58:35 GMT" name="tearDown" finished-at="2022-12-20T20:58:36 GMT" duration-ms="698" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Testcases.TC_001_LoginTest@662ac478]" started-at="2022-12-21T04:14:56 GMT" name="tearDown" finished-at="2022-12-21T04:14:57 GMT" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Testcases.TC_005_DDT -->
-    </test> <!-- NOPCommerceResource Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.Testcases.TC_001_LoginTest -->
+      <class name="com.Testcases.TC_002_AddNewCustomerTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Testcases.TC_002_AddNewCustomerTest@3eb25e1a]" started-at="2022-12-21T04:14:57 GMT" name="setup" finished-at="2022-12-21T04:15:00 GMT" duration-ms="3251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddnewCustomer()[pri:0, instance:com.Testcases.TC_002_AddNewCustomerTest@3eb25e1a]" started-at="2022-12-21T04:15:00 GMT" name="AddnewCustomer" finished-at="2022-12-21T04:15:14 GMT" duration-ms="13479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddnewCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Testcases.TC_002_AddNewCustomerTest@3eb25e1a]" started-at="2022-12-21T04:15:14 GMT" name="tearDown" finished-at="2022-12-21T04:15:14 GMT" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Testcases.TC_002_AddNewCustomerTest -->
+    </test> <!-- NOPCommerceResource -->
+  </suite> <!-- nopCommerce Functional Suite -->
 </testng-results>

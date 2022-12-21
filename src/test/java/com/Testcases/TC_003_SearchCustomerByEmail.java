@@ -10,7 +10,7 @@ import com.testBase.BaseClass;
 
 public class TC_003_SearchCustomerByEmail extends BaseClass {
 	
-	@Test
+	@Test(groups={"regression","master"})
 	
 	
 	public void searchCustomerbyEmail() throws InterruptedException {

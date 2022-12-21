@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <suite name="nopCommerce Regression Suite" thread-count="5">
+	<parameter name="browser" value="chrome" />
+	<!-- <parameter name="browser" value="edge"/>  -->
+	<!-- <parameter name="browser" value="firefox"/> -->
+	
+<listeners>
+		<listener class-name="com.utilities.ExtentReportUtility" />
+	</listeners>
+
+
+    <test name="NOPCommerceResource">
+		
+		<groups>
+		
+         <run>
+            <include name = "regression" />
+            <!--<exclude name = "sanity" /> -->
+         </run>
+      	</groups>
+		
+		<classes>
+<class name="com.Testcases.TC_003_SearchCustomerByEmail" />
+ <class name="com.Testcases.TC_001_LoginTest" />
+<class name="com.Testcases.TC_004_SearchCustomerByName" />
+<class name="com.Testcases.TC_002_AddNewCustomerTest" />
+<class name="com.Testcases.TC_005_DDT" />
+<!-- <class name="com.Testcases.TC_005_DDT" />-->
+
+		</classes>-->
+	
+	<packages>
+      		<package name="com.nopcommerce.TestCases"/>
+      	</packages>
+      	
+      	</test>
+
+</suite>

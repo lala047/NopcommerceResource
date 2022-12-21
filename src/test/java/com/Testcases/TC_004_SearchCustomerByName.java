@@ -10,7 +10,7 @@ import com.testBase.BaseClass;
 
 public class TC_004_SearchCustomerByName extends BaseClass{
 	
-	@Test
+	@Test (groups={"master"})
 	public void searchCustomerbyName() {
 
 		LoginPage lp= new LoginPage(driver);

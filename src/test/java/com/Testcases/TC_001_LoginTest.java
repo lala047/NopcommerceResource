@@ -10,7 +10,8 @@ import com.testBase.BaseClass;
 public class TC_001_LoginTest extends BaseClass{
 
 	
-	@Test
+	@Test(groups={"sanity","regression","master"})
+	//@Test(invocationCount=3) //This tells the TestNG to run this particular test 3 times
 	public void loginTest() throws InterruptedException {
 	logger.info(" ******* Starting TC_002_LoginTest *******");
 		

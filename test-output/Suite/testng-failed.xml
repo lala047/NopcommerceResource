@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.utilities.ExtentReportUtility"/>
   </listeners>
-  <test thread-count="5" name="NOPCommerceResource Test(failed)">
+  <test thread-count="2" parallel="classes" name="chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.Testcases.TC_005_DDT">
+      <class name="com.Testcases.TC_001_LoginTest">
         <methods>
-          <include name="loginTestDDt"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.Testcases.TC_001_LoginTest -->
+      <class name="com.Testcases.TC_003_SearchCustomerByEmail">
+        <methods>
+          <include name="searchCustomerbyEmail"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.Testcases.TC_005_DDT -->
+      </class> <!-- com.Testcases.TC_003_SearchCustomerByEmail -->
     </classes>
-  </test> <!-- NOPCommerceResource Test(failed) -->
+  </test> <!-- chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

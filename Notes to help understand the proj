@@ -1,0 +1,27 @@
+I put the Excel (data) Path in the DataProvider class
+ 
+ All the page classes extended the BasePage which contains paegfactory. initElements and this.driver=driver;
+ 
+ All the Test cases extended the Base Class
+ 
+ In Login test case, the test method (public void loginTest() throws InterruptedException {) does not have parameters
+ 
+ In the DDT test case, the test method (public void loginTestDDT(String user,String pwd,String exp) throws InterruptedException{) does HAVE parameters
+ 
+ Delete this ( <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">) from the xml file if there is an error showing up anywhere on your xml
+ 
+ 
+ 
+ NOTE
+ -----
+ -No compartment for Drivers
+  -No compartment for ReadConfig as there is a method in the BaseClass ( rb=ResourceBundle.getBundle("config")) that reads Config.Properties file
+  
+  
+  UTILITIES
+  ----------
+ DataProvider
+ Excel Reader file to read the excel sheet
+ Reporting Listener which customises the report
+ 
+ X - No Read Config File  that reads Config.Properties file as there is a method in the BaseClass ( rb=ResourceBundle.getBundle("config")) that reads it

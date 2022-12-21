@@ -12,7 +12,7 @@ import com.testBase.BaseClass;
 public class TC_002_AddNewCustomerTest extends BaseClass{
 
 	
-	@Test 
+	@Test (groups={"sanity","regression","master"})
 	public void AddnewCustomer() throws InterruptedException {
 		LoginPage lp= new LoginPage(driver);
 		//lp.SetLogin("admin@yourstore.com","admin");

@@ -8,12 +8,8 @@ import org.testng.annotations.DataProvider;
 public class DataProviders {
 	
 	@DataProvider(name="LoginData")
-	public String[][] getData() throws IOException
-	{
-		//String path=System.getProperty("user.dir")+"/TestData/LoginData.xlsx";
-		//C:\Users\emmai\eclipse-workspace\NOPCommerceResource\src\test\java\TestData\LoginData.xlsx
+	public String[][] getData() throws IOException{
 		String path=(System.getProperty("user.dir") + "\\src\\test\\java\\TestData\\LoginData.xlsx");
-		
 		int totalrows=XLUtils.getRowCount(path, "Sheet1");   //4
 		int totalcols=XLUtils.getCellCount(path, "Sheet1", 1); //3
 		

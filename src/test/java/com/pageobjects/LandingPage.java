@@ -14,7 +14,7 @@ public class LandingPage extends BasePage{
 	@FindBy(xpath="//h1[normalize-space()='Dashboard']") public WebElement msgHeading;
 	@FindBy(xpath="//a[@href='#']//p[contains(text(),'Customers')]") public WebElement custmenu;
 	@FindBy(xpath="//a[@href='/Admin/Customer/List']//p[contains(text(),'Customers')]") public WebElement cstmrbtn;
-	
+	@FindBy(xpath="//a[text()='Logout']") public WebElement logout;
 	
 	public void createcustomer() {
 		custmenu.click();
@@ -31,6 +31,9 @@ public class LandingPage extends BasePage{
 		}*/
 		
 		
+	}
+	public void clickLogout() {
+		logout.click();
 		
 		
 	}
